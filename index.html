@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YouTube</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="icon" href="./assets/Yt-icon.png" />
+    <script
+      src="https://kit.fontawesome.com/006b15212a.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="root">
+      <header id="header">
+        <div class="menu-logo">
+          <i class="fa-solid fa-bars" id="btn-sidebar"></i>
+          <a href="index.html"
+            ><img
+              src="./assets/logo-youtube.jpg"
+              class="logo-youtube"
+              alt="youtube-logo"
+            />
+          </a>
+        </div>
+        <div class="search-icon">
+          <input type="search" id="search" name="search" placeholder="Search" />
+          <div class="icons-search-microphone">
+            <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+            <i class="fa-solid fa-microphone" id="microphone"></i>
+          </div>
+        </div>
+        <div class="menu-opsion-header">
+          <i class="fa-regular fa-square-plus"></i>
+          <i class="fa-regular fa-bell"></i>
+          <img
+            src="./assets/besiri.jpg"
+            class="img-open"
+            onclick="toggleMenu()"
+            alt="besiri"
+          />
+        </div>
+        <div class="sub-menu-wrap" id="subMenu">
+          <div class="sub-menu">
+            <div class="user-info">
+              <img src="./assets/besiri.jpg" alt="" />
+              <h3>Besir Brahimi</h3>
+            </div>
+            <hr />
+            <a href="#" class="sub-menu-link">
+              <i class="fa-regular fa-user"></i>
+              <p>Your Channel</p>
+            </a>
+            <a href="#" class="sub-menu-link">
+              <i class="fa-regular fa-circle-play"></i>
+              <p>Youtube Studio</p>
+            </a>
+            <a href="#" class="sub-menu-link">
+              <i class="fa-sharp fa-solid fa-repeat"></i>
+              <p>Switch Account</p>
+              <span>></span>
+            </a>
+            <a href="#" class="sub-menu-link">
+              <i class="fa-solid fa-arrow-right-from-bracket"></i>
+              <p>Sign Out</p>
+            </a>
+            <hr />
+            <a href="#" class="sub-menu-link">
+              <i class="fa-duotone fa-dollar-sign"></i>
+              <p>Purchases and memberships</p>
+            </a>
+            <a href="#" class="sub-menu-link">
+              <i class="fa-solid fa-id-card"></i>
+              <p>Your data in Youtube</p>
+            </a>
+            <hr />
+            <a href="#" class="sub-menu-link">
+              <i class="fa-solid fa-moon"></i>
+              <p>Apperance: Device theme</p>
+              <span>></span>
+            </a>
+            <a href="#" class="sub-menu-link">
+              <i class="fa-solid fa-hands-asl-interpreting"></i>
+              <p>Language: English</p>
+              <span>></span>
+            </a>
+            <a href="#" class="sub-menu-link">
+              <i class="fa-sharp fa-solid fa-globe"></i>
+              <p>Location: United States</p>
+              <span>></span>
+            </a>
+            <hr />
+            <a href="#" class="sub-menu-link">
+              <i class="fa-sharp fa-solid fa-gear"></i>
+              <p>Settings</p>
+            </a>
+          </div>
+        </div>
+      </header>
+      <aside>
+        <div class="aside-parent">
+          <div class="aside" id="aside">
+            <div class="flex-container" id="flex-container">
+              <i class="fa-solid fa-house"></i>
+              <p>Home</p>
+            </div>
+            <div class="flex-container" id="flex-container1">
+              <i class="fa-solid fa-plus-minus"></i>
+              <p>Shorts</p>
+            </div>
+            <div class="flex-container" id="flex-container2">
+              <img src="./assets/play.png" alt="Subscriptions" />
+              <p>Subscriptions</p>
+            </div>
+            <div class="flex-container" id="flex-container3">
+              <img src="./assets/library.png" alt="" />
+              <p>Library</p>
+            </div>
+          </div>
+          <div class="hidden" id="aside-links">
+            <hr />
+            <div class="home">
+              <img src="./assets/clock.png" alt="" />
+              <p>History</p>
+            </div>
+            <div class="home">
+              <img src="./assets/play-YT.png" alt="" />
+              <p>Your videos</p>
+            </div>
+            <div class="home">
+              <img src="./assets/clock.png" alt="" />
+              <p>Watch later</p>
+            </div>
+            <div class="home">
+              <img src="./assets/like.png" alt="" />
+              <p>Liked videos</p>
+            </div>
+            <hr />
+            <p class="title">Subscriptions</p>
+            <div class="languages">
+              <div class="home">
+                <img src="./assets/javascript.png" class="js-html-css" alt="" />
+                <p>JavaScript</p>
+              </div>
+              <div class="home">
+                <img src="./assets/html.png" class="js-html-css" alt="" />
+                <p>Html</p>
+              </div>
+              <div class="home">
+                <img src="./assets/css.png" class="js-html-css" alt="" />
+                <p>CSS</p>
+              </div>
+              <div class="home">
+                <img src="./assets/react.png" class="js-html-css" alt="" />
+                <p>React</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
+      <main id="main-width">
+        <div class="youtube-options" id="youtube-options">
+          <ul class="ul-options">
+            <li class="navbar all">
+              <a class="st11 st1" id="tab-lists1" href="index.html"> All </a>
+            </li>
+            <li class="navbar religion">
+              <a class="st1" id="tab-lists2"> About religion </a>
+            </li>
+            <li class="navbar films">
+              <a class="st1" id="tab-lists3"> Movies & TV </a>
+            </li>
+            <li class="navbar music">
+              <a class="st1" id="tab-lists4"> Meditation music </a>
+            </li>
+            <li class="navbar gaming">
+              <a class="st1" id="tab-lists5"> Computer Gaming </a>
+            </li>
+            <li class="navbar meditation">
+              <a class="st1"> Mediation and pop music </a>
+            </li>
+            <li class="navbar uploaded">
+              <a class="st1"> Recently uploaded </a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <img src="." alt="">
+        </div>
+        <div class="youtube-posts videos" id="youtube-posts">
+        </div>
+      </main>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
